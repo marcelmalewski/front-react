@@ -1,0 +1,78 @@
+.personBox {
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+
+    .aboutPerson {
+        text-decoration: none;
+        color: #a3c0ff;
+        display: flex;
+        align-items: center;
+        width: 80%;
+        //border: 1px solid black;
+
+        .lastName {
+            margin-left: 12px;
+        }
+
+        p {
+            font-size: 27px;
+            font-family: 'Courier New', Courier, monospace;
+            font-family: cursive;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+    }
+
+    .aboutPerson:hover {
+        color: #7da6ff
+    }
+
+    .inputBox {
+        width: 20%;
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .deleteBox {
+            input {
+                display: none;
+            }
+
+            label {
+                //border: 1px solid black;
+                font-size: 40px;
+                transition: all 0.2s ease;
+                display: flex;
+
+                .filledTrash {
+                    display: none;
+                }
+            }
+
+            input:not(:checked) ~ label:hover ~ label{
+                .filledTrash {
+                    display: block;
+                }
+
+                .emptyTrash {
+                    display: none;
+                }
+
+            }
+
+            input:checked ~ label{
+                .filledTrash {
+                    display: block;
+                }
+
+                .emptyTrash {
+                    display: none;
+                }
+            }
+        }
+    }
+}

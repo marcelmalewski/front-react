@@ -1,0 +1,89 @@
+.ListOfPersons {
+    width: 65%;
+    color: #a3c0ff;
+    //border: 1px solid black;
+
+    .TitleAndAddBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-bottom: 1px solid black;
+
+        p {
+            margin-bottom: 5px;
+        }
+
+        .pPersons {
+            font-size: 35px;
+        }
+
+        .pAdd {
+            font-size: 20px;
+        }
+
+        .LinkAddAndEditPerson {
+            color: #a3c0ff;
+            text-decoration: none;
+        }
+
+        .LinkAddAndEditPerson:hover {
+            color: #FF9811;
+        }
+    }
+
+    .SortAndDelete {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 15px;
+
+        .choose {
+            display: flex;
+            align-items: flex-end;
+            // border: 1px solid black;
+
+            .pSort {
+                display: flex;
+                align-items: center;
+                font-size: 22px;
+                margin-right: 8px;
+                margin-bottom: 0px;
+                height: 35px;
+                //border: 1px solid black;
+                
+            }
+
+            .options {
+                color: #a3c0ff;
+                font-size: 16px;
+                height: 35px;
+                background-color: #444D7A;
+                border: none;
+                border-bottom: 2px solid black;
+            }
+
+            .options:hover {
+                border-bottom: 2px solid rgb(202, 131, 0);
+            }
+        }
+
+        button {
+            background-color: #444D7A;
+            border: none;
+            border: none;
+            border-bottom: 1px solid black;
+            font-size: 20px;
+            color: #a3c0ff;
+        }
+
+        button:hover {
+            color: orange;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .ListOfPersons {
+        width: 100%;
+    }
+}

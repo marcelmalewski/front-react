@@ -1,0 +1,46 @@
+.MovieAndLoadingBox {
+    //border: 1px solid black;
+    margin-top: 60px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    .MovieBox {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        // vh zajmuje całą widoczną powieszchnie
+        //height: 100vh;
+        //border: 1px solid black;
+    }
+
+    .loading {
+        margin-top: 50px;
+        display: inline-block;
+        //border: 1px solid black;
+        justify-self: center;
+        color: #a3c0ff;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        font-family: cursive;
+        font-style: italic;
+    }
+}
+
+
+
+@media (max-width: 1300px) {
+    .MovieAndLoadingBox {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    .MovieAndLoadingBox {
+        .MovieBox {
+            flex-direction: column;
+        }
+    }
+}

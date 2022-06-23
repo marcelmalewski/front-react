@@ -1,0 +1,398 @@
+.MovieDetailsBox{
+    color: #bfe0ff;
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    border-radius: 25px;
+    background-color: hsl(230, 28%, 62%);
+    //border: 1px solid black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    padding: 30px;
+
+    .aboutMovieBox{
+        height: 660px;
+        //border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+
+        .aboutMovieAndButtonsBox{
+            //border: 1px solid black;
+            height: 70%;
+            display: flex;
+
+            .aboutMovieAndImageBox{
+                width: 70%;
+                //border: 1px solid black;
+                display: flex;
+
+                .imageBox{
+                    width: 60%;
+                    //border: 1px solid black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        border: 1px solid black;
+                        width: 85%;
+                        object-fit: contain;
+                    }
+                }
+
+                .aboutMovie{
+                    //border: 1px solid black;
+                    width: 70%;
+
+                    p {
+                        font-family: cursive;
+                    }
+
+                    .title {
+                        font-size: 40px;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                    }
+
+                    .directorBox {
+                        text-decoration: none;
+
+                        span {
+                            color:#bfe0ff;
+                            font-style: italic;
+                            font-size: 20px;
+                        }
+
+                        .director {
+                            //border: 1px solid black;
+                            font-style: normal;
+                            font-family: cursive;
+                        }
+
+                        .first_name {
+                            margin-left: 10px; 
+                        }
+
+                        .last_name {
+                            margin-left: 5px; 
+                        }
+                    }
+
+                    .directorBox:hover{
+                        .first_name {
+                            color: #31529b; 
+                        }
+
+                        .last_name {
+                            color: #31529b; 
+                        }
+                        
+                    }
+
+                    .genre {
+                        font-size: 27px;
+                        font-style: italic;
+                        font-family: normal;
+                        margin-bottom: 12px;
+                        margin-top: 60px;
+
+                        span {
+                            font-style: normal;
+                            margin-right: 5px;
+                            font-family: cursive;
+                        }
+                    }
+
+                    .release_date{
+                        font-size: 20px;
+                        font-style: italic;
+                        font-family: normal;
+                        margin-top: 0px;
+
+                        span {
+                            font-style: normal;
+                            margin-right: 5px;
+                            font-family: cursive;
+                        }
+                    }
+                }
+
+            }
+
+            .buttonsBox {
+                width: 30%;
+                //border: 1px solid black;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 28px;
+                letter-spacing: 0.5px;
+                font-family: cursive;
+
+                .editLink {
+                    text-decoration: none;
+                    margin-bottom: 20px;
+                    color: black;
+                }
+
+                .editLink:hover {
+                    color: orange;
+                }
+
+                .deleteButton {
+                    color: black;
+                    background-color: hsl(230, 28%, 62%);
+                    border: none;
+                    font-size: 28px;
+                    font-family: cursive;
+                }
+
+                .deleteButton:hover {
+                    color: orange;
+                }
+
+            }
+
+        }
+
+        .descriptionBox {
+            margin-top: 20px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            height: 40%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+
+            .description {
+                font-size: 20px;
+                //border-top: 1px solid black;
+                margin-top: 20px;
+                width: 70%;
+            }
+            
+        }
+    }
+
+    .changeDirectorBox{
+        height: 170px;
+        //border: 1px solid black;
+        display: flex;
+
+        .selectDirectorBox{
+            //border: 1px solid black;
+            width: 30%;
+            height: 90%;
+
+            .selectDirectorP{
+                font-size: 25px;
+                margin-bottom: 10px;
+                //border-bottom: 1px solid black;
+            }
+        }
+
+        .changeDirectorButtonBox{
+            width: 20%;
+            //border: 1px solid black;
+            margin-left: 20px;
+            height: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                border: none;
+                background-color: hsl(230, 28%, 62%);
+                font-size: 25px;
+            }
+
+            button:hover {
+                color: orange;
+            }
+
+        }
+    }
+
+    .actorsAndAddActorsBox{
+        //border: 1px solid black;
+        display: flex;
+        width: 100%;
+
+        .actors{
+            width: 50%;
+            //border: 1px solid black;
+
+            .actorsPAndDelete{
+                width: 90%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                .actorsP {
+                    font-size: 25px;
+                    margin-bottom: 0px;
+                    border-bottom: 1px solid black;
+                }
+
+                button {
+                    color: black;
+                    font-size: 20px;
+                    background-color: hsl(230, 28%, 62%);
+                    border: none;
+                    border-bottom: 1px solid black;
+                }
+
+                button:hover {
+                    color: orange;
+                }
+            }
+        }
+
+        .addActorsAndButtonBox{
+            width: 50%;
+            display: flex;
+
+            .addActorsBox{
+                //border: 1px solid black;
+                width: 60%;
+    
+                .addActorsP{
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                    //border-bottom: 1px solid black;
+                }
+            }
+    
+            .addActorsButton{
+                width: 40%;
+                //border: 1px solid black;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                button {
+                    border: none;
+                    background-color: hsl(230, 28%, 62%);
+                    font-size: 25px;
+                }
+    
+                button:hover {
+                    color: orange;
+                }
+    
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 1200px) {
+    .MovieDetailsBox {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .MovieDetailsBox {
+        .changeDirectorBox{
+            .selectDirectorBox{
+                //border: 1px solid black;
+                width: 50%; //zmiana
+            }
+        }
+
+        .actorsAndAddActorsBox{
+            flex-direction: column-reverse;//zmiana
+    
+            .actors{
+                width: 80%;//zmiana
+            }
+    
+            .addActorsAndButtonBox{
+                width: 100%;//zmiana
+    
+                .addActorsBox{
+                    width: 50%;//zmiana
+                }
+        
+                .addActorsButton{
+                    width: 20%;//zmiana
+                    height: 160px;//zmiana
+                    margin-left: 20px;//zmiana
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .MovieDetailsBox {
+        .aboutMovieBox{
+            height: 950px;
+
+            .aboutMovieAndButtonsBox{
+                height: 75%;
+                flex-direction: column;
+                align-items: center;
+    
+                .aboutMovieAndImageBox{
+                    width: 100%;
+                    height: 70%;
+    
+                    .imageBox{
+                        width: 70%;
+                    }
+    
+                }
+    
+                .buttonsBox {
+                    width: 100%;
+                    height: 30%;
+                }
+            }
+
+            .descriptionBox {
+                height: 25%;
+                .description {
+                    width: 90%;
+                }
+                
+            }
+        }
+
+        .changeDirectorBox{
+            .selectDirectorBox{
+                width: 70%; //zmiana
+            }
+
+            .changeDirectorButtonBox{
+                width: 30%;//zmiana
+            }
+
+        }
+
+        .actorsAndAddActorsBox{
+            .actors{
+                width: 100%;//zmiana
+            }
+    
+            .addActorsAndButtonBox{
+                .addActorsBox{
+                    width: 70%;//zmiana
+                }
+        
+                .addActorsButton{
+                    width: 30%;//zmiana
+                }
+            }
+            
+        }
+    }
+}

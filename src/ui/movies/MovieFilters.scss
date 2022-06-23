@@ -1,0 +1,103 @@
+.FiltersBox {
+    width: 30%;
+    color: #a3c0ff;
+
+    .TitleAndClearBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+
+        .pFilters {
+            font-size: 35px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .filterP {
+        width: 50%;
+        font-size: 26px;
+        border-bottom: 1px solid black;
+    }
+
+    .fGenres {
+        //border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+
+        .oneGenre {
+            height: 40px;
+            width: 140px;
+            font-size: 19px;
+            font-weight: 500;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            //border: 1px solid black;
+
+            input {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .selectDirector{
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid black;
+
+        .label{
+            //border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .directorFilterP{
+                font-size: 26px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid black;
+            }
+
+            button {
+                background-color: #444D7A;
+                border: none;
+                border-bottom: 1px solid black;
+                margin-bottom: 10px;
+                color: #a3c0ff;
+                font-size: 20px;
+            }
+    
+            button:hover {
+                color: orange;
+            }
+        }
+    }
+
+    input {
+        margin-top: 5px;
+        padding-bottom: 5px;
+        background-color: #444D7A;
+        border: none;
+        border-bottom: 1px solid black;
+        font-size: 16px;
+        color: #a3c0ff;
+    }
+
+    input::placeholder {
+        color: #a3c0ff
+    }
+
+    input:focus {
+        outline: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .FiltersBox {
+        width: 100%;
+    }
+}

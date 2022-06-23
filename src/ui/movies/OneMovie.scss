@@ -1,0 +1,120 @@
+.movieBox {
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    .imageBox {
+        width: 25%;
+        //border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            border: 1px solid black;
+            width: 82%; 
+            object-fit: contain;
+            
+        }
+    }
+
+    .detailsAndButtonBox {
+        width: 75%;
+        display: flex;
+        //border: 1px solid black;
+
+        .aboutMovie {
+            text-decoration: none;
+            color: #a3c0ff;
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+            width: 80%;
+            //border: 1px solid black;
+    
+            .title {
+                margin-bottom: -10px;
+                text-decoration: none;
+                font-size: 27px;
+                font-family: cursive;
+            }
+    
+            .director {
+                font-size: 21px;
+                font-family: 'Courier New', Courier, monospace;
+                font-style: italic;
+            }
+
+            .genre {
+                margin-bottom: -10px;
+            }
+    
+            p {
+                font-size: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                font-style: italic;
+                
+    
+                span {
+                    font-family: cursive;
+                    font-style: normal;
+                }
+            }
+        }
+    
+        .aboutMovie:hover {
+            .title {
+                color: #5d90ff;
+            }
+        }
+    
+        .inputBox {
+            width: 20%;
+            //border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .deleteBox {
+                input {
+                    display: none;
+                }
+    
+                label {
+                    //border: 1px solid black;
+                    font-size: 40px;
+                    transition: all 0.2s ease;
+                    display: flex;
+    
+                    .filledTrash {
+                        display: none;
+                    }
+                }
+    
+                input:not(:checked) ~ label:hover ~ label{
+                    .filledTrash {
+                        display: block;
+                    }
+    
+                    .emptyTrash {
+                        display: none;
+                    }
+    
+                }
+    
+                input:checked ~ label{
+                    .filledTrash {
+                        display: block;
+                    }
+    
+                    .emptyTrash {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

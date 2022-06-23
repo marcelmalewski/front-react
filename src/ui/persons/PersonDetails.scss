@@ -1,0 +1,168 @@
+.personDetailsBox {
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    border-radius: 25px;
+    background-color: hsl(230, 28%, 62%);
+    //border: 1px solid black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    padding: 30px;
+
+    .personDetailsAndButtonsBox {
+        display: flex;
+        //border: 1px solid black;
+        justify-content: flex-end;
+        margin-right: 5%;
+        align-items: center;
+        height: 300px;
+
+        .personDetails{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            //border: 1px solid black;
+            height: 70%;
+            width: 50%;
+    
+            .first_name {
+                color: #bfe0ff;
+                font-size: 40px;
+                font-weight: 600;
+                letter-spacing: 2px;
+                font-family: cursive;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+    
+            .last_name {
+                margin-top: 0px;
+                margin-bottom: 20px;
+                font-size: 28px;
+                font-family: cursive;
+                font-style: italic;
+                
+            }
+    
+            .nationality {
+                margin-top: 0px;
+                font-size: 21px;
+                font-family: cursive;
+                font-style: italic;
+                margin-bottom: 8px;
+            }
+    
+            .birth_date {
+                margin-top: 0px;
+                margin-bottom: 40px;
+                font-size: 15px;
+                font-family: cursive;
+                font-style: italic;
+    
+                span {
+                    font-size: 17px;
+                    font-style: normal;
+                    margin-right: 5px;
+                    
+                }
+            }
+        }
+
+        .buttonsBox {
+            height: 70%;
+            width: 30%;
+            border-left: 1px solid black;
+            //border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            letter-spacing: 0.5px;
+
+            .editLink {
+                text-decoration: none;
+                margin-bottom: 20px;
+                color: black;
+            }
+
+            .editLink:hover {
+                color: orange;
+            }
+
+            .deleteButton {
+                color: black;
+                background-color: hsl(230, 28%, 62%);
+                border: none;
+                font-size: 28px;
+            }
+
+            .deleteButton:hover {
+                color: orange;
+            }
+
+        }
+    }
+
+    .actorsAndDirectorsBox{
+        border-top: 1px solid black;
+        display: flex;
+
+        .playedIn {
+            width: 50%;
+            //border: 1px solid black;
+
+            .playedInP{
+                color: #bfe0ff;
+                font-size: 22px;
+                letter-spacing: 2px;
+                font-family: cursive;
+                margin-bottom: 0px;
+            }
+        }
+
+        .isDirector {
+            width: 50%;
+            //border: 1px solid black;
+
+            .directorInP{
+                color: #bfe0ff;
+                font-size: 22px;
+                letter-spacing: 2px;
+                font-family: cursive;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .personDetailsBox {
+        width: 90%;
+    }
+}
+
+@media (max-width: 750px) {
+    .personDetailsBox {
+        .actorsAndDirectorsBox{
+            flex-direction: column;
+    
+            .playedIn {
+                width: 100%;
+    
+                .playedInP{
+                    margin-bottom: 20px;
+                }
+            }
+    
+            .isDirector {
+                width: 100%;
+    
+                .directorInP{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

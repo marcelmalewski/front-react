@@ -1,0 +1,47 @@
+.NavbarBox {
+    color: #a3c0ff;
+
+    .IconBox {
+        display: flex;
+        justify-content: center;
+
+        .Icon {
+            display: flex;
+            align-items: center;
+            margin: 28px 15px 28px 0px;
+            color: black;
+            font-size: 65px;
+        }
+
+        .Text {
+            display: flex;
+            align-items: center;
+
+            span {
+                color: black;
+            }
+        }
+        
+    }
+    .Navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(36, 36, 36);
+        height: 60px;
+    
+        .Link {
+            color: #a3c0ff;
+            text-decoration: none;
+            font-size: 26px;
+        }
+
+        .Link:hover {
+            color: orange;
+        }
+
+        .Link1 {
+            margin-right: 40px;
+        }
+    }
+}

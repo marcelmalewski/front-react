@@ -1,0 +1,126 @@
+.movieInPersonBox {
+    border-bottom: 1px solid black;
+    width: 90%;
+    display: flex;
+    margin-bottom: 10px;
+
+    .imageBox {
+        width: 25%;
+        //border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            border: 1px solid black;
+            width: 82%; 
+            object-fit: contain;
+            
+        }
+    }
+
+    .detailsBox {
+        width: 75%;
+        display: flex;
+        //border: 1px solid black;
+
+        .aboutMovie {
+            text-decoration: none;
+            color: #bfe0ff;
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+            width: 80%;
+            //border: 1px solid black;
+    
+            .title {
+                margin-bottom: -10px;
+                text-decoration: none;
+                font-size: 22px;
+                font-family: cursive;
+            }
+    
+            .director {
+                font-size: 17px;
+                font-family: 'Courier New', Courier, monospace;
+                font-style: italic;
+                margin-bottom: 0px;
+            }
+
+            .genre {
+                margin-bottom: -10px;
+            }
+    
+            p {
+                font-size: 16px;
+                font-family: 'Courier New', Courier, monospace;
+                font-style: italic;
+                
+    
+                span {
+                    font-family: cursive;
+                    font-style: normal;
+                }
+            }
+        }
+    
+        .aboutMovie:hover {
+            .title {
+                color: #31529b;
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .movieInPersonBox {
+        .imageBox {
+            img {
+                width: 95%;
+            }
+        }
+    
+        .detailsBox {
+            .aboutMovie {
+                .title {
+                    font-size: 20px;
+                }
+        
+                .director {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 15px;
+                    margin-bottom: -5px;
+                }
+        
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .movieInPersonBox {
+        .imageBox {
+            padding-bottom: 10px;
+        }
+    
+        .detailsBox {
+            .aboutMovie {
+                .title {
+                    font-size: 24px;
+                }
+        
+                .director {
+                    font-size: 19px;
+                }
+        
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
